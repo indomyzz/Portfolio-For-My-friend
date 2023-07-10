@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /*background-color: black;*/
+    background-image: url(images/pcbackground.avif);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+html {
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: inherit;
+  }
+.smail-box{
+       height: 830px;
+        width: 480px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #252525;
+        border-radius: 20px;
+        margin: 40px auto ;
+        position: relative;
+        top: 50px;
+}
+#smailimage{
+    transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        top: -75px;
+        position: absolute;
+        
+        
+}
+h2{
+    
+    margin-top: 65px;
+    
+}
+h4{
+    float: left;
+    margin-top: 20px;
+    background-color: #4d4d4d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    margin-top: 80px;
+}
+img{
+    margin-top: 20px;
+}
+#dj{
+   margin-left: 70px;
+    margin-right: 80px;
+}
+#changepic{
+    margin-left: 90px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 420px) {
+    body {
+      background-image: url(images/phonebgg.avif);
+    }
+    smail-box {
+        width: 350px;
+        height: 750px;
+        margin: 20px auto;
+      }
+    
+      #smailimage {
+        top: -65px;
+      }
+  }
+  
