@@ -1,6 +1,14 @@
 const myButton = document.getElementById("changepic");
     let myImage = document.getElementById("smailimage");
 
+    function ChangebtnTxT(){
+      if(myButton.textContent === "Tap for another image of me!"){
+            myButton.textContent =  "Tap for previous image!     "
+      }
+      else{                   
+        myButton.textContent = "Tap for another image of me!"
+      }
+
     function changeImg() {
       const mySrc = myImage.getAttribute("src");
 
@@ -12,3 +20,12 @@ const myButton = document.getElementById("changepic");
     }
 
     myButton.addEventListener("click", changeImg);
+    myButton.addEventListener("click", ChangebtnTxT);
+
+
+
+    
+
+
+
+  
